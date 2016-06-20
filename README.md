@@ -2,11 +2,17 @@
 
 ## What is included:
 SCSS support
+
 Browserify for commonJS modules
+
 BabelJS for ES6 support
+
 VueJS, Lodash, jQuery
+
 Some basic VueJS directives and filters
+
 Normalize and reset styling
+
 Some SCSS snippets (buttons, modals, panels, tooltip)
 
 ##Local Server
@@ -24,7 +30,8 @@ Entry point for each view is `<folderName>/scripts/<folderName>-index.js` and  `
 
 ##If you are using VueJS
 
-`window.VueInstance = new Vue();`.
+`window.VueInstance = new Vue();`
+
 `Controller` file should handle the `Vue` instantiation and all the view logic.
 
 
@@ -44,5 +51,7 @@ Use `container` class for each view.
 ##TODO:
 
 Add support for installing front-end dependencies via NPM.
+
 Add Jade support.
+
 Remove the need of adding folder name in the gulpfile.
