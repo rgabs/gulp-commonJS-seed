@@ -45,10 +45,12 @@ In SCSS files, use `url('../../global/images/<imageName>')`
 
 Use `container` class for each view.
 
-###NOTE: If you are replacing the URL, always use images in css like this : `../../global/images/<imgName>`
+###NOTE: 
+
+If you are replacing the URL, always use images in css like this : `../../global/images/<imgName>`
 
 
-##TODO:
+###TODO:
 
 Add support for installing front-end dependencies via NPM.
 
