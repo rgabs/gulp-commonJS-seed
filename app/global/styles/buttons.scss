@@ -1,0 +1,117 @@
+.btn,
+button {
+  padding: 10px 20px;
+}
+input[type=radio] + label:before {
+  content: "";
+  display: inline-block;
+  border: 2px solid #969798;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+}
+input[type=radio]:checked + label:before {
+  content: "";
+  border: 2px solid $theme-color;
+  color: $theme-color;
+  background-image: url('../../global/images/circle.svg');
+  height: 15px;
+  width: 15px;
+  vertical-align: bottom;
+}
+.blue-dropdown {
+  padding: 10px 25px 10px 10px;
+  border-color: $theme-color;
+  color: $theme-color;
+  background: $theme-color-light url("../../global/images/dropdown-arrow.svg") right 10px center no-repeat;
+  background-size: 10px;
+  appearance: none;
+}
+.currency-dropdown {
+  .currency-name,
+  select {
+    @extend .blue-dropdown;
+    @extend .circular-border;
+  }
+  select {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    width: 110px;
+  }
+  .currency-name {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-image: none;
+    border-right-width: 0;
+    background-color: white;
+    width: 95px;
+    padding: 10px;
+    text-align: center;
+  }
+}
+.bordered-btn {
+  background: white;
+  color: $theme-color;
+  &:hover {
+    background-color: $theme-color;
+    color: white;
+  }
+}
+input[type=checkbox] + label:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid $theme-color;
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-right: 15px;
+  border-radius: 4px;
+  background-color: white;
+}
+input[type=checkbox]:checked + label:before {
+  content: "";
+  background: url('../../global/images/tick.svg') no-repeat center;
+  background-size: 75%;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button,
+input {
+  border-radius: 5px;
+  border: none;
+  border: 1px solid $theme-color;
+  outline: none;
+  font-size: 14px;
+}
+input {
+  padding: 5px 15px;
+}
+.add-btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $greenish-blue;
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  margin: 0 10px;
+  text-align: center;
+}
+.disable-events {
+  pointer-events: none;
+  opacity: 0.6;
+}
+input[disabled] {
+  pointer-events: none;
+  background-color: $input-disabled;
+  border-color: $disabled-border;
+}
+select {
+  font-size: 14px;
+  line-height: initial;
+}

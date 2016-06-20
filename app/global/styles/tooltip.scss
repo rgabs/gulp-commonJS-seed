@@ -1,0 +1,27 @@
+.tooltip {
+  visibility: hidden;
+  position: absolute;
+  &:after {
+    background-color: rgba($mck-blue, 0.7);
+    border-radius: 5px;
+    bottom: 15px;
+    color: white;
+    content: attr(text);
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    z-index: 98;
+    width: 175px;
+    font-weight: 200;
+  }
+  &:before {
+    border: solid;
+    border-color: rgba($mck-blue, 0.7) transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 10px;
+    content: "";
+    left: 45px;
+    position: absolute;
+    z-index: 99;
+  }
+}

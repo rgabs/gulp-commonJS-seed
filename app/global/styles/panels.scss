@@ -1,0 +1,47 @@
+.panels-wrapper {
+  .panel {
+    border: 1px solid $theme-color;
+    border-radius: 5px;
+    background-color: $theme-color-light;
+    margin: 10px 0;
+    .panel-heading {
+      padding: 10px 15px;
+    }
+    .panel-body {
+      background-color: $theme-color-extra-light;
+      border-top: 1px solid $theme-color;
+      border-radius: 0 0 5px 5px;
+      padding: 15px;
+      display: none;
+    }
+    .expand-close-icon {
+      color: white;
+      width: 20px;
+      text-align: center;
+      font-size: 18px;
+      word-spacing: -5px;
+      height: 20px;
+      display: inline-block;
+      background-color: $greenish-blue;
+    }
+    .comma {
+      margin-left: -5px;
+    }
+    .selected-brand:last-of-type {
+      .comma {
+        display: none;
+      }
+    }
+  }
+}
+
+
+.header-panel{
+  border-radius: 5px;
+  background-color: $theme-color;
+  margin: 10px 0;
+  .header-panel-heading{
+    color: white;
+    padding: 15px;
+  }
+}

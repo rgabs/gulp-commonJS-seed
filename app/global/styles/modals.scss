@@ -1,0 +1,21 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.68);
+  .modal-container {
+    width: 500px;
+    margin: 200px auto;
+    padding: 20px;
+    background: white;
+    .modal-content {
+      padding: 20px 0;
+    }
+    .modal-heading {
+      //padding-bottom: 10px;
+      font-size: 20px;
+    }
+  }
+}

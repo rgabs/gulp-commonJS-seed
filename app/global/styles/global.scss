@@ -1,0 +1,135 @@
+@import 'app/global/styles/_variable';
+body {
+  font-family: Roboto, sans-serif;
+  color: $mck-blue;
+  font-weight: 300;
+}
+[v-cloak] {
+  display: none;
+}
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+.overflow-effect {
+  -webkit-overflow-scrolling: touch;
+  background: linear-gradient(white 30%, rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%, radial-gradient(farthest-side at 50% 0, rgba(0, 0, 0, 0.2), transparent), radial-gradient(farthest-side at 50% 100%, rgba(0, 0, 0, 0.2), transparent) 0 100%;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+  background-attachment: local, local, scroll, scroll;
+}
+.footer {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.header {
+  height: 10vh;
+  font-size: 32px;
+  background-color: white;
+}
+.text-left {
+  text-align: left;
+}
+.grey-border {
+  border-color: #ADADAD;
+}
+#Internal_Login_failed_text,//add error fields id's here
+#ConfidentialityDisclosure_error,
+#TAGrid_error,
+.error,
+.mck_error_msg {
+  font-size: 14px;
+  color: red;
+  font-family: inherit;
+  width: 100%;
+  text-align: center;
+  visibility: hidden;
+}
+.vertical-align-parent {
+  display: table;
+  width: 100%;
+  .align-child {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+.architecture-view,
+.resource-view {
+  min-height: 85vh;
+}
+.footer {
+  height: 15vh;
+  background-color: $mck-blue;
+  color: white;
+}
+.box-shadow {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.circular-border {
+  border-radius: 5px;
+}
+.container {
+  max-width: 1440px;
+  min-width: 1200px;
+  padding-left: 80px;
+  margin: auto;
+  padding-right: 80px;
+}
+.text-center {
+  text-align: center;
+}
+.cursor {
+  cursor: pointer;
+}
+.bold {
+  font-weight: 600;
+}
+.f12 {
+  font-size: 12px;
+}
+.f16 {
+  font-size: 16px;
+}
+.f34 {
+  font-size: 34px;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+.width-80 {
+  width: 80%;
+}
+.page-heading,
+.page-subheading {
+  font-weight: 300;
+}
+.page-subheading {
+  padding-top: 5px;
+}
+input[type=radio] + label:before {
+  content: "";
+  display: inline-block;
+  border: 2px solid #969798;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+}
+input[type=radio]:checked + label:before {
+  content: "";
+  border: 2px solid $theme-color;
+  color: $theme-color;
+  background-image: url('../images/circle.svg');
+  height: 15px;
+  width: 15px;
+}
