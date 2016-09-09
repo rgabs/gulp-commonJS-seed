@@ -45,7 +45,44 @@ In SCSS files, use `url('../../global/images/<imageName>')`
 
 Use `container` class for each view.
 
-###NOTE: 
+
+##Folder Structure
+```
+.
+├── README.md
+├── app
+│   ├── global                              # Global Assets
+│   │   ├── images
+│   │   │   ├── circle.svg
+│   │   │   └── dropdown-arrow.svg
+│   │   ├── styles                          # Global Styles
+│   │   │   ├── normalize.scss
+│   │   │   ├── reset.scss
+│   │   │   ├── variable.scss
+│   │   │   ├── global.scss
+│   │   │   ├── modals.scss
+│   │   │   ├── panels.scss
+│   │   │   └── tooltip.scss
+│   │   └── vendor                          # Vendor files which will be added for each view
+│   │       ├── jquery-1.12.3.min.js
+│   │       ├── lodash.js
+│   │       └── vue.min.js
+│   ├── login                               # Example View containing files specific to that view
+│   │   ├── index.html
+│   │   ├── scripts
+│   │   │   ├── login-index.js              # Entry point of login view
+│   │   │   └── loginController.js          # Controller for each view
+│   │   └── styles                          # Styles specific to each view
+│   │       └── login.scss
+│   └── vueHelpers                          # Global Helper files
+│       ├── directives.js
+│       └── filters.js
+├── gulpfile.js
+└── package.json
+
+```
+
+###NOTE:
 
 If you are replacing the URL, always use images in css like this : `../../global/images/<imgName>`
 
